@@ -30,6 +30,8 @@
 #include <umicom/platform/workspace/os_ui.h>
 #include <umicom/platform/workspace/remote_plan.h>
 #include <umicom/platform/workspace/sync.h>
+#include <umicom/platform/workspace/suite_command.h>
+#include <umicom/platform/workspace/integration_graph.h>
 #include <umicom/platform/workspace/test_plan.h>
 #include <umicom/platform/workspace/workspace_status.h>
 #include <umicom/platform/workspace/workspace_command.h>
@@ -40,9 +42,11 @@ static int audit(void){
     umi_platform_report_framework_audit(&s); return s.mismatched==0u?0:2;
 }
 int umi_platform_workspace_command(int argc,char **argv){
-    if(argc<1){puts("workspace commands: status graph sync framework-audit lock-plan build-plan test-plan codeguard-plan os-ui remote-plan migration-plan");return 0;}
+    if(argc<1){puts("workspace commands: status suite integration-graph graph sync framework-audit lock-plan build-plan test-plan codeguard-plan os-ui remote-plan migration-plan");return 0;}
     const char *cmd=argv[0];
     if(strcmp(cmd,"status")==0) return print_result(umi_workspace_print_status());
+    if(strcmp(cmd,"suite")==0) return umi_workspace_suite_command(argc-1, argv+1);
+    if(strcmp(cmd,"integration-graph")==0) return print_result(umi_workspace_print_integration_graph());
     if(strcmp(cmd,"graph")==0) return print_result(umi_workspace_print_graph());
     if(strcmp(cmd,"framework-audit")==0) return audit();
     if(strcmp(cmd,"lock-plan")==0) return print_result(umi_workspace_print_lock_plan());

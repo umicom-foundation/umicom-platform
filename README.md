@@ -50,3 +50,23 @@ The Framework is also the canonical home for reusable toolkit-neutral UI
 contracts and the reusable GTK4 adapter/component implementation. Product-only
 widgets remain in the product until a second real consumer proves they are
 reusable.
+
+
+## Suite and Integration Fabric commands
+
+Batch 18 promotes suite manifests from planned membership lists to explicit
+required/optional composition contracts.
+
+```powershell
+$platform = ".\build\host-debug\bin\umicom-platform.exe"
+
+& $platform workspace suite list
+& $platform workspace suite show umicom.suite.studio
+& $platform workspace suite plan umicom.suite.studio
+& $platform workspace suite validate umicom.suite.financial
+& $platform workspace integration-graph
+```
+
+An unavailable **required** member blocks suite readiness. An unavailable
+**optional** member is reported as `SKIP` and produces a degraded-but-usable
+suite plan. No command in Batch 18 launches or stops real product processes.

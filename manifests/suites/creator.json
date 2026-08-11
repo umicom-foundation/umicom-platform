@@ -1,13 +1,15 @@
 {
-  "schema": "umicom.suite/1",
+  "schema": "umicom.suite/2",
   "id": "umicom.suite.creator",
   "name": "Umicom Creator Suite",
-  "status": "planned",
-  "enabled": false,
-  "members": [
+  "status": "active",
+  "enabled": true,
+  "required_members": [
+    "umicom.llm"
+  ],
+  "optional_members": [
     "umicom.studio-media",
     "umicom.studio-music",
-    "umicom.book",
-    "umicom.llm"
+    "umicom.book"
   ]
 }

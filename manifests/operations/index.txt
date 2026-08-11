@@ -9,3 +9,7 @@ manifests/operations/build-plan.json
 manifests/operations/test-plan.json
 manifests/operations/codeguard-plan.json
 manifests/operations/os-ui.json
+manifests/operations/suite-list.json
+manifests/operations/suite-plan.json
+manifests/operations/suite-validate.json
+manifests/operations/integration-graph.json

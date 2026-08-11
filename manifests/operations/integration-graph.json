@@ -1,0 +1,7 @@
+{
+  "schema": "umicom.workspace-operation/1",
+  "id": "integration-graph",
+  "mutates": false,
+  "network": false,
+  "description": "Print required and optional suite relationships through the Integration Fabric boundary."
+}

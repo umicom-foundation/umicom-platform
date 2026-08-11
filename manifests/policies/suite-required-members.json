@@ -1,0 +1,6 @@
+{
+  "schema": "umicom.policy/1",
+  "rule": "suite-required-members",
+  "severity": "error",
+  "description": "An enabled suite must declare at least one required member; all required members must be active and available before launch."
+}

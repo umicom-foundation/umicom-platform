@@ -29,6 +29,7 @@
 #define UMI_PLATFORM_SHA_MAX 41u
 #define UMI_PLATFORM_MAX_PROJECTS 128u
 #define UMI_PLATFORM_MAX_SUITES 32u
+#define UMI_PLATFORM_MAX_SUITE_MEMBERS 64u
 typedef struct UmiPlatformProject {
     char id[UMI_PLATFORM_ID_MAX];
     char name[UMI_PLATFORM_NAME_MAX];
@@ -44,5 +45,9 @@ typedef struct UmiPlatformSuite {
     char name[UMI_PLATFORM_NAME_MAX];
     char status[UMI_PLATFORM_STATUS_MAX];
     bool enabled;
+    char required_members[UMI_PLATFORM_MAX_SUITE_MEMBERS][UMI_PLATFORM_ID_MAX];
+    size_t required_member_count;
+    char optional_members[UMI_PLATFORM_MAX_SUITE_MEMBERS][UMI_PLATFORM_ID_MAX];
+    size_t optional_member_count;
 } UmiPlatformSuite;
 #endif

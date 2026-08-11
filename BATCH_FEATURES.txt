@@ -1,7 +1,14 @@
-Umicom Platform Batch 17
-- Canonical application repository migration begins with Umicom OS.
-- Framework adds toolkit-neutral Umicom::ui_components.
-- Framework expands Umicom::ui_gtk4 reusable component implementation.
-- Umicom OS becomes a Framework user-space application with headless and GTK4 shells.
-- Platform adds safe VERSION_LOCK project SHA plan/apply support.
-- No automatic Git commit or push.
+Umicom Platform Batch 18 — Suite and Inter-Application Runtime Foundation
+
+- Adds Framework Umicom::integration contracts for application discovery,
+  required/optional dependency resolution, presence, routing, envelopes,
+  dispatch, shared sessions, suite launch planning, topology and health.
+- Upgrades platform suite manifests to umicom.suite/2.
+- Distinguishes required_members from optional_members.
+- Enables Studio, Financial, Creator, Education and Complete suite planning.
+- Adds native workspace suite list/show/plan/validate commands.
+- Adds native workspace integration-graph command.
+- Missing optional products no longer block a suite.
+- Missing required products still block readiness.
+- Keeps process launch/stop out of Batch 18 until executable conventions are
+  standardised across product repositories.

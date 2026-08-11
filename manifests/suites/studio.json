@@ -1,12 +1,14 @@
 {
-  "schema": "umicom.suite/1",
+  "schema": "umicom.suite/2",
   "id": "umicom.suite.studio",
   "name": "Umicom Studio Suite",
-  "status": "planned",
-  "enabled": false,
-  "members": [
+  "status": "active",
+  "enabled": true,
+  "required_members": [
     "umicom.studio-ide",
-    "umicom.llm",
+    "umicom.llm"
+  ],
+  "optional_members": [
     "umicom.studio-media",
     "umicom.studio-music",
     "umicom.book"

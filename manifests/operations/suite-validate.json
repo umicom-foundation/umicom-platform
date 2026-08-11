@@ -1,0 +1,7 @@
+{
+  "schema": "umicom.workspace-operation/1",
+  "id": "suite-validate",
+  "mutates": false,
+  "network": false,
+  "description": "Return success only when all required suite members are available."
+}

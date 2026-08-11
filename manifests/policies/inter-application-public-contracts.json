@@ -1,0 +1,6 @@
+{
+  "schema": "umicom.policy/1",
+  "rule": "inter-application-public-contracts",
+  "severity": "error",
+  "description": "Applications communicate through Framework contracts/capabilities/Integration Fabric and must not consume another product's private state, private headers or database tables."
+}

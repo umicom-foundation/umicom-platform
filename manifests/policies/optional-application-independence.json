@@ -1,0 +1,6 @@
+{
+  "schema": "umicom.policy/1",
+  "rule": "optional-application-independence",
+  "severity": "error",
+  "description": "An unavailable optional suite member must not make the suite invalid or prevent required members from running."
+}

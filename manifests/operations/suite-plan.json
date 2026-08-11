@@ -1,0 +1,7 @@
+{
+  "schema": "umicom.workspace-operation/1",
+  "id": "suite-plan",
+  "mutates": false,
+  "network": false,
+  "description": "Evaluate required and optional member availability for one suite."
+}

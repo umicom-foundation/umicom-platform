@@ -53,3 +53,57 @@ bool umi_platform_json_get_bool(const char *json, const char *key, bool *output)
     if (strncmp(value, "false", 5u) == 0) { *output = false; return true; }
     return false;
 }
+
+bool umi_platform_json_get_string_array(
+    const char *json,
+    const char *key,
+    char output[][UMI_PLATFORM_ID_MAX],
+    size_t maximum_items,
+    size_t *out_count)
+{
+    const char *value;
+    size_t count = 0U;
+
+    if (json == NULL || key == NULL || output == NULL ||
+        maximum_items == 0U || out_count == NULL) {
+        return false;
+    }
+    *out_count = 0U;
+
+    value = find_value(json, key);
+    if (value == NULL || *value != '[') {
+        return false;
+    }
+    ++value;
+
+    for (;;) {
+        const char *end;
+        size_t length;
+
+        while (*value != '\0' &&
+               (isspace((unsigned char)*value) != 0 || *value == ',')) {
+            ++value;
+        }
+        if (*value == ']') {
+            *out_count = count;
+            return true;
+        }
+        if (*value != '"' || count >= maximum_items) {
+            return false;
+        }
+
+        ++value;
+        end = strchr(value, '"');
+        if (end == NULL) {
+            return false;
+        }
+        length = (size_t)(end - value);
+        if (length == 0U || length >= UMI_PLATFORM_ID_MAX) {
+            return false;
+        }
+        (void)memcpy(output[count], value, length);
+        output[count][length] = '\0';
+        ++count;
+        value = end + 1;
+    }
+}

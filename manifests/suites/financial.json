@@ -1,14 +1,16 @@
 {
-  "schema": "umicom.suite/1",
+  "schema": "umicom.suite/2",
   "id": "umicom.suite.financial",
   "name": "Umicom Financial Suite",
-  "status": "planned",
-  "enabled": false,
-  "members": [
-    "umicom.trader",
+  "status": "active",
+  "enabled": true,
+  "required_members": [
     "umicom.tms",
     "umicom.bank",
-    "umicom.umicoin",
+    "umicom.umicoin"
+  ],
+  "optional_members": [
+    "umicom.trader",
     "umicom.commodity-exchange"
   ]
 }

@@ -36,6 +36,7 @@ set(UMICOM_PLATFORM_PUBLIC_HEADERS
     include/umicom/platform/string.h
     include/umicom/platform/submodule.h
     include/umicom/platform/suite.h
+    include/umicom/platform/suite_runtime.h
     include/umicom/platform/toolchain.h
     include/umicom/platform/types.h
     include/umicom/platform/validator.h
@@ -66,6 +67,8 @@ set(UMICOM_PLATFORM_PUBLIC_HEADERS
     include/umicom/platform/workspace/remote_plan.h
     include/umicom/platform/workspace/migration_plan.h
     include/umicom/platform/workspace/command_catalogue.h
+    include/umicom/platform/workspace/suite_command.h
+    include/umicom/platform/workspace/integration_graph.h
 )
 
 set(UMICOM_PLATFORM_SOURCES
@@ -82,6 +85,7 @@ set(UMICOM_PLATFORM_SOURCES
     src/model/manifest.c
     src/model/project.c
     src/model/suite.c
+    src/model/suite_runtime.c
     src/model/workspace.c
     src/parse/json.c
     src/report/reporter.c
@@ -115,6 +119,8 @@ set(UMICOM_PLATFORM_SOURCES
     src/workspace/migration_plan.c
     src/workspace/command_catalogue.c
     src/workspace/workspace_health.c
+    src/workspace/suite_command.c
+    src/workspace/integration_graph.c
     src/workspace/workspace_command.c
     src/commands/cmd_doctor.c
     src/commands/cmd_framework_audit.c

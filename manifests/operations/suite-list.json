@@ -1,0 +1,7 @@
+{
+  "schema": "umicom.workspace-operation/1",
+  "id": "suite-list",
+  "mutates": false,
+  "network": false,
+  "description": "List suite definitions with required and optional member counts."
+}

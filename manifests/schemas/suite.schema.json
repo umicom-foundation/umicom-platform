@@ -1,11 +1,46 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "umicom.suite/2",
   "type": "object",
   "required": [
+    "schema",
     "id",
     "name",
     "status",
     "enabled",
-    "members"
-  ]
+    "required_members",
+    "optional_members"
+  ],
+  "properties": {
+    "schema": {
+      "const": "umicom.suite/2"
+    },
+    "id": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    },
+    "enabled": {
+      "type": "boolean"
+    },
+    "required_members": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "optional_members": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    }
+  }
 }

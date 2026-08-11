@@ -1,0 +1,24 @@
+[submodule "framework"]
+	path = framework
+	url = https://github.com/umicom-foundation/umicom-framework.git
+[submodule "applications/studio/ide"]
+	path = applications/studio/ide
+	url = https://github.com/umicom-foundation/umicom-studio-ide.git
+[submodule "applications/tms"]
+	path = applications/tms
+	url = https://github.com/umicom-foundation/umicom-tms.git
+[submodule "applications/bank"]
+	path = applications/bank
+	url = https://github.com/umicom-foundation/umicom-bank.git
+[submodule "applications/llm"]
+	path = applications/llm
+	url = https://github.com/umicom-foundation/umicom-llm.git
+[submodule "applications/coin"]
+	path = applications/coin
+	url = https://github.com/umicom-foundation/umicoin.git
+[submodule "operating-systems/umicom-os"]
+	path = operating-systems/umicom-os
+	url = https://github.com/umicom-foundation/umicom-os.git
+[submodule "services/authorengine"]
+	path = services/authorengine
+	url = https://github.com/umicom-foundation/umicom-authorengine-ai.git

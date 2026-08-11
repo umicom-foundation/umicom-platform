@@ -1,0 +1,10 @@
+{
+  "id": "umicom.fixture.service",
+  "name": "Service Fixture",
+  "type": "service",
+  "path": "services/fixture",
+  "repository": "example/repo",
+  "status": "active",
+  "enabled": true,
+  "framework_required": false
+}

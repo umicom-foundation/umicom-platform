@@ -1,0 +1,6 @@
+{
+  "schema": "umicom.policy/1",
+  "rule": "website-placeholder",
+  "severity": "warning",
+  "description": "Planned websites remain manifest-only until canonical repositories are approved; placeholder URLs are forbidden."
+}

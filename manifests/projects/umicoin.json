@@ -1,0 +1,17 @@
+{
+  "schema": "umicom.project/1",
+  "id": "umicom.umicoin",
+  "name": "UmiCoin",
+  "type": "application",
+  "path": "applications/coin",
+  "repository": "https://github.com/umicom-foundation/umicoin.git",
+  "status": "active",
+  "enabled": true,
+  "framework_required": true,
+  "frontends": [
+    "desktop",
+    "web",
+    "mobile",
+    "headless"
+  ]
+}

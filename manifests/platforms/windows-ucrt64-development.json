@@ -1,0 +1,8 @@
+{
+  "schema": "umicom.platform-profile/1",
+  "id": "windows-ucrt64-development",
+  "host": "windows",
+  "arch": "x86_64",
+  "toolchain": "msys2-ucrt64",
+  "status": "active"
+}

@@ -1,0 +1,14 @@
+{
+  "schema": "umicom.project/1",
+  "id": "umicom.foundation-website",
+  "name": "Umicom Foundation Website",
+  "type": "website",
+  "path": "websites/foundation",
+  "repository": "",
+  "status": "planned",
+  "enabled": false,
+  "framework_required": false,
+  "frontends": [],
+  "candidate_repository": "umicom-foundation/website",
+  "canonical_confirmed": false
+}

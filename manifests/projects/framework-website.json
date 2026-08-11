@@ -1,0 +1,12 @@
+{
+  "schema": "umicom.project/1",
+  "id": "umicom.framework-website",
+  "name": "Umicom Framework Website",
+  "type": "website",
+  "path": "websites/framework",
+  "repository": "",
+  "status": "planned",
+  "enabled": false,
+  "framework_required": false,
+  "frontends": []
+}

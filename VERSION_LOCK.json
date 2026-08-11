@@ -1,0 +1,30 @@
+{
+  "schema": "umicom.version-lock/1",
+  "platform_commit": "733bf1d1b3f9cd4e7ee9bb00f704813f855ee1d9",
+  "generated_from": "verified GitHub main state",
+  "projects": {
+    "framework": "26eef4fa8a8da05f8d4e653e04e87a61ca6effec",
+    "studio-ide": "133c39ebe6d03af9c836f6ffad693c379a449359",
+    "tms": "ad09fbd71d1a2b3a933ce507886ee1ee9f0d8fc8",
+    "bank": "5723bac66b9cffef02292a0139d260f57e64110d",
+    "llm": "ad441580e5addfdbb1698a5b36f969f020f3ca20",
+    "umicoin": "9538fa4f016bb5f36cc22201ad01b6726de52ee7",
+    "umicom-os": "dc628bafd705db596aa34f8d9800536d840ac6fe",
+    "authorengine": "fc1ca481022b60eb6f6b52d7e95256e85192e09e"
+  },
+  "nested_expected": {
+    "studio-framework": "26eef4fa8a8da05f8d4e653e04e87a61ca6effec",
+    "studio-authorengine": "fc1ca481022b60eb6f6b52d7e95256e85192e09e",
+    "authorengine-llama.cpp": "a4a0aa5ea2a88e4858996199fefd5439f17b481c"
+  },
+  "planned_not_locked": [
+    "trader-independent-repository",
+    "studio-media",
+    "studio-music",
+    "book",
+    "browser",
+    "commodity-exchange",
+    "foundation-website",
+    "framework-website"
+  ]
+}

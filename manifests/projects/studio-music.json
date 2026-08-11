@@ -1,0 +1,17 @@
+{
+  "schema": "umicom.project/1",
+  "id": "umicom.studio-music",
+  "name": "Umicom Studio Music",
+  "type": "application",
+  "path": "applications/studio/music",
+  "repository": "https://github.com/umicom-foundation/umicom-studio-music.git",
+  "status": "planned",
+  "enabled": false,
+  "framework_required": true,
+  "frontends": [
+    "desktop",
+    "web",
+    "mobile",
+    "headless"
+  ]
+}

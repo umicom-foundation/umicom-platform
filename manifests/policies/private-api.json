@@ -1,0 +1,6 @@
+{
+  "schema": "umicom.policy/1",
+  "rule": "private-api",
+  "severity": "error",
+  "description": "Products must not include Framework private implementation headers."
+}

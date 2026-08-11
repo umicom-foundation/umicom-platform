@@ -1,0 +1,6 @@
+function(umi_platform_enable_sanitizers target)
+    if(CMAKE_C_COMPILER_ID MATCHES "Clang|GNU" AND NOT WIN32)
+        target_compile_options(${target} PRIVATE -fsanitize=address,undefined)
+        target_link_options(${target} PRIVATE -fsanitize=address,undefined)
+    endif()
+endfunction()

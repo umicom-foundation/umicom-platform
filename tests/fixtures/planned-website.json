@@ -1,0 +1,10 @@
+{
+  "id": "umicom.fixture.website",
+  "name": "Website Fixture",
+  "type": "website",
+  "path": "websites/fixture",
+  "repository": "",
+  "status": "planned",
+  "enabled": false,
+  "framework_required": false
+}

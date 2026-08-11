@@ -1,0 +1,10 @@
+{
+  "id": "umicom.fixture.bad",
+  "name": "Bad",
+  "type": "application",
+  "path": "../bad",
+  "repository": "",
+  "status": "planned",
+  "enabled": false,
+  "framework_required": true
+}

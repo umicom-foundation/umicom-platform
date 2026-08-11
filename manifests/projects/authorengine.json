@@ -1,0 +1,12 @@
+{
+  "schema": "umicom.project/1",
+  "id": "umicom.authorengine",
+  "name": "Umicom AuthorEngine AI",
+  "type": "service",
+  "path": "services/authorengine",
+  "repository": "https://github.com/umicom-foundation/umicom-authorengine-ai.git",
+  "status": "active",
+  "enabled": true,
+  "framework_required": false,
+  "frontends": []
+}

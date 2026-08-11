@@ -1,0 +1,17 @@
+# Umicom Platform project manifest index
+manifests/projects/framework.json
+manifests/projects/studio-ide.json
+manifests/projects/tms.json
+manifests/projects/bank.json
+manifests/projects/llm.json
+manifests/projects/umicoin.json
+manifests/projects/umicom-os.json
+manifests/projects/authorengine.json
+manifests/projects/trader.json
+manifests/projects/studio-media.json
+manifests/projects/studio-music.json
+manifests/projects/book.json
+manifests/projects/browser.json
+manifests/projects/commodity-exchange.json
+manifests/projects/foundation-website.json
+manifests/projects/framework-website.json

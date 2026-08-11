@@ -1,0 +1,6 @@
+# Umicom Platform suite manifest index
+manifests/suites/studio.json
+manifests/suites/financial.json
+manifests/suites/creator.json
+manifests/suites/education.json
+manifests/suites/complete.json

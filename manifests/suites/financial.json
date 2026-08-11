@@ -1,0 +1,14 @@
+{
+  "schema": "umicom.suite/1",
+  "id": "umicom.suite.financial",
+  "name": "Umicom Financial Suite",
+  "status": "planned",
+  "enabled": false,
+  "members": [
+    "umicom.trader",
+    "umicom.tms",
+    "umicom.bank",
+    "umicom.umicoin",
+    "umicom.commodity-exchange"
+  ]
+}

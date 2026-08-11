@@ -1,0 +1,17 @@
+{
+  "schema": "umicom.project/1",
+  "id": "umicom.bank",
+  "name": "Umicom Bank",
+  "type": "application",
+  "path": "applications/bank",
+  "repository": "https://github.com/umicom-foundation/umicom-bank.git",
+  "status": "active",
+  "enabled": true,
+  "framework_required": true,
+  "frontends": [
+    "desktop",
+    "web",
+    "mobile",
+    "headless"
+  ]
+}

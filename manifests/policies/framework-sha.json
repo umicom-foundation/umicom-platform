@@ -1,0 +1,6 @@
+{
+  "schema": "umicom.policy/1",
+  "rule": "framework-sha",
+  "severity": "error",
+  "description": "Enabled application Framework revisions converge on the platform Framework revision for integrated releases."
+}

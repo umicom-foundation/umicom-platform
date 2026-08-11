@@ -1,0 +1,10 @@
+{
+  "id": "umicom.fixture",
+  "name": "Fixture",
+  "type": "application",
+  "path": "applications/fixture",
+  "repository": "",
+  "status": "planned",
+  "enabled": false,
+  "framework_required": true
+}

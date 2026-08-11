@@ -1,0 +1,6 @@
+function(umi_platform_print_toolchain)
+    message(STATUS "C compiler: ${CMAKE_C_COMPILER}")
+    message(STATUS "C compiler ID: ${CMAKE_C_COMPILER_ID}")
+    message(STATUS "C compiler version: ${CMAKE_C_COMPILER_VERSION}")
+    message(STATUS "Generator: ${CMAKE_GENERATOR}")
+endfunction()

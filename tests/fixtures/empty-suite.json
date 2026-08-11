@@ -1,0 +1,7 @@
+{
+  "id": "umicom.suite.empty",
+  "name": "Empty Suite",
+  "status": "planned",
+  "enabled": false,
+  "members": []
+}

@@ -1,0 +1,19 @@
+{
+  "schema": "umicom.project/1",
+  "id": "umicom.trader",
+  "name": "Umicom Trader",
+  "type": "application",
+  "path": "applications/trader",
+  "repository": "https://github.com/umicom-foundation/umicom-trader.git",
+  "status": "planned-migration",
+  "enabled": false,
+  "framework_required": true,
+  "frontends": [
+    "desktop",
+    "web",
+    "mobile",
+    "headless"
+  ],
+  "migration_source": "applications/studio/ide/applications/trader",
+  "note": "Batch 14 Trader source currently exists inside the Studio repository and is planned for extraction to an independent repository."
+}

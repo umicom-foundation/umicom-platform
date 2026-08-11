@@ -1,0 +1,17 @@
+{
+  "schema": "umicom.project/1",
+  "id": "umicom.browser",
+  "name": "Umicom Browser",
+  "type": "application",
+  "path": "applications/browser",
+  "repository": "https://github.com/umicom-foundation/umicom-browser.git",
+  "status": "planned",
+  "enabled": false,
+  "framework_required": true,
+  "frontends": [
+    "desktop",
+    "web",
+    "mobile",
+    "headless"
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "schema": "umicom.platform-profile/1",
+  "id": "linux-x86_64-development",
+  "host": "linux",
+  "arch": "x86_64",
+  "toolchain": "clang-or-gcc",
+  "status": "active"
+}

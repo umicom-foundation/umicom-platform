@@ -1,0 +1,8 @@
+{
+  "schema": "umicom.platform-profile/1",
+  "id": "linux-riscv64-development",
+  "host": "linux",
+  "arch": "riscv64",
+  "toolchain": "cross",
+  "status": "planned"
+}

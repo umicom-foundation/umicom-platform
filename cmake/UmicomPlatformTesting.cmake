@@ -1,0 +1,8 @@
+function(umi_platform_add_test name source)
+    add_executable(${name} ${source})
+    target_link_libraries(${name} PRIVATE umicom_platform_bootstrap)
+    target_include_directories(${name} PRIVATE "${CMAKE_SOURCE_DIR}/tests/include")
+    umi_platform_apply_warnings(${name})
+    add_test(NAME ${name} COMMAND ${name})
+    set_tests_properties(${name} PROPERTIES WORKING_DIRECTORY "${CMAKE_SOURCE_DIR}")
+endfunction()

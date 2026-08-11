@@ -1,0 +1,17 @@
+{
+  "schema": "umicom.project/1",
+  "id": "umicom.book",
+  "name": "Umicom Book",
+  "type": "application",
+  "path": "applications/book",
+  "repository": "https://github.com/umicom-foundation/umicom-book.git",
+  "status": "planned",
+  "enabled": false,
+  "framework_required": true,
+  "frontends": [
+    "desktop",
+    "web",
+    "mobile",
+    "headless"
+  ]
+}

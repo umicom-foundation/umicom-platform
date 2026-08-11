@@ -1,0 +1,10 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "id",
+    "root_framework_path",
+    "project_index",
+    "suite_index"
+  ]
+}

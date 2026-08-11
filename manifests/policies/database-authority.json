@@ -1,0 +1,6 @@
+{
+  "schema": "umicom.policy/1",
+  "rule": "database-authority",
+  "severity": "error",
+  "description": "Only Umicom Data Server implementations may own database connections for Umicom state."
+}

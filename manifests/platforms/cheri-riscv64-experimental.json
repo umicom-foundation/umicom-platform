@@ -1,0 +1,8 @@
+{
+  "schema": "umicom.platform-profile/1",
+  "id": "cheri-riscv64-experimental",
+  "host": "linux",
+  "arch": "cheri-riscv64",
+  "toolchain": "cheri-llvm",
+  "status": "planned-experimental"
+}

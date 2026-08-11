@@ -1,0 +1,17 @@
+{
+  "schema": "umicom.project/1",
+  "id": "umicom.studio-ide",
+  "name": "Umicom Studio IDE",
+  "type": "application",
+  "path": "applications/studio/ide",
+  "repository": "https://github.com/umicom-foundation/umicom-studio-ide.git",
+  "status": "active",
+  "enabled": true,
+  "framework_required": true,
+  "frontends": [
+    "desktop",
+    "web",
+    "mobile",
+    "headless"
+  ]
+}

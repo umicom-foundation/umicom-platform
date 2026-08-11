@@ -1,0 +1,7 @@
+{
+  "id": "riscv64",
+  "host": "linux",
+  "arch": "riscv64",
+  "toolchain": "cross",
+  "status": "planned"
+}

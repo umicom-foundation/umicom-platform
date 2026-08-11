@@ -1,0 +1,17 @@
+{
+  "schema": "umicom.project/1",
+  "id": "umicom.commodity-exchange",
+  "name": "Umicom Commodity Exchange",
+  "type": "application",
+  "path": "applications/commodity-exchange",
+  "repository": "https://github.com/umicom-foundation/umicom-commodity-exchange.git",
+  "status": "planned",
+  "enabled": false,
+  "framework_required": true,
+  "frontends": [
+    "desktop",
+    "web",
+    "mobile",
+    "headless"
+  ]
+}

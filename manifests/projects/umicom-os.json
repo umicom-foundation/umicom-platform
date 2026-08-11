@@ -1,0 +1,12 @@
+{
+  "schema": "umicom.project/1",
+  "id": "umicom.umicom-os",
+  "name": "Umicom OS",
+  "type": "operating-system",
+  "path": "operating-systems/umicom-os",
+  "repository": "https://github.com/umicom-foundation/umicom-os.git",
+  "status": "active",
+  "enabled": true,
+  "framework_required": true,
+  "frontends": []
+}

@@ -1,0 +1,12 @@
+{
+  "schema": "umicom.project/1",
+  "id": "umicom.framework",
+  "name": "Umicom Framework",
+  "type": "framework",
+  "path": "framework",
+  "repository": "https://github.com/umicom-foundation/umicom-framework.git",
+  "status": "active",
+  "enabled": true,
+  "framework_required": false,
+  "frontends": []
+}

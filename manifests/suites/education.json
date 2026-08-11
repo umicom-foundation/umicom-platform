@@ -1,0 +1,13 @@
+{
+  "schema": "umicom.suite/1",
+  "id": "umicom.suite.education",
+  "name": "Umicom Education Suite",
+  "status": "planned",
+  "enabled": false,
+  "members": [
+    "umicom.studio-ide",
+    "umicom.book",
+    "umicom.foundation-website",
+    "umicom.framework-website"
+  ]
+}

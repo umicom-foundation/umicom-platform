@@ -1,0 +1,17 @@
+{
+  "schema": "umicom.project/1",
+  "id": "umicom.studio-media",
+  "name": "Umicom Studio Media",
+  "type": "application",
+  "path": "applications/studio/media",
+  "repository": "https://github.com/umicom-foundation/umicom-studio-media.git",
+  "status": "planned",
+  "enabled": false,
+  "framework_required": true,
+  "frontends": [
+    "desktop",
+    "web",
+    "mobile",
+    "headless"
+  ]
+}

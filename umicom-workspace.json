@@ -1,0 +1,29 @@
+{
+  "schema": "umicom.workspace/1",
+  "id": "umicom.platform",
+  "name": "Umicom Platform",
+  "root_framework_path": "framework",
+  "project_index": "manifests/projects/index.txt",
+  "suite_index": "manifests/suites/index.txt",
+  "policies": {
+    "framework_sha_policy": "converge-on-integrated-release",
+    "database_authority": "umicom.data-server",
+    "product_private_dependencies": "forbidden",
+    "frontend_model": [
+      "desktop",
+      "web",
+      "mobile",
+      "headless"
+    ]
+  },
+  "websites": {
+    "foundation": {
+      "status": "planned",
+      "enabled": false
+    },
+    "framework": {
+      "status": "planned",
+      "enabled": false
+    }
+  }
+}

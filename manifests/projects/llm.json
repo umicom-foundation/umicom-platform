@@ -1,0 +1,17 @@
+{
+  "schema": "umicom.project/1",
+  "id": "umicom.llm",
+  "name": "Umicom LLM",
+  "type": "application",
+  "path": "applications/llm",
+  "repository": "https://github.com/umicom-foundation/umicom-llm.git",
+  "status": "active",
+  "enabled": true,
+  "framework_required": true,
+  "frontends": [
+    "desktop",
+    "web",
+    "mobile",
+    "headless"
+  ]
+}

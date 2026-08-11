@@ -1,0 +1,21 @@
+{
+  "schema": "umicom.suite/1",
+  "id": "umicom.suite.complete",
+  "name": "Umicom Complete Suite",
+  "status": "planned",
+  "enabled": false,
+  "members": [
+    "umicom.studio-ide",
+    "umicom.tms",
+    "umicom.bank",
+    "umicom.llm",
+    "umicom.umicoin",
+    "umicom.authorengine",
+    "umicom.trader",
+    "umicom.studio-media",
+    "umicom.studio-music",
+    "umicom.book",
+    "umicom.browser",
+    "umicom.commodity-exchange"
+  ]
+}

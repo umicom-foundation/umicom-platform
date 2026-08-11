@@ -1,0 +1,6 @@
+{
+  "schema": "umicom.policy/1",
+  "rule": "frontend-boundary",
+  "severity": "error",
+  "description": "Toolkit types must not cross product-neutral Framework public contracts."
+}

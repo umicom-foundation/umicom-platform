@@ -1,0 +1,7 @@
+{
+  "id": "cheri-riscv64",
+  "host": "linux",
+  "arch": "cheri-riscv64",
+  "toolchain": "cheri-llvm",
+  "status": "planned-experimental"
+}

@@ -1,0 +1,17 @@
+{
+  "schema": "umicom.project/1",
+  "id": "umicom.tms",
+  "name": "Umicom TMS",
+  "type": "application",
+  "path": "applications/tms",
+  "repository": "https://github.com/umicom-foundation/umicom-tms.git",
+  "status": "active",
+  "enabled": true,
+  "framework_required": true,
+  "frontends": [
+    "desktop",
+    "web",
+    "mobile",
+    "headless"
+  ]
+}

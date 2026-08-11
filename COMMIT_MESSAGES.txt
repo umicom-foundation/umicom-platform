@@ -1,0 +1,3 @@
+Commit the platform repository:
+
+git commit -m "feat(platform): add workspace manifests native bootstrap tooling and validation"

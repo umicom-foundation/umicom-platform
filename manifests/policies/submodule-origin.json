@@ -1,0 +1,6 @@
+{
+  "schema": "umicom.policy/1",
+  "rule": "submodule-origin",
+  "severity": "error",
+  "description": "Submodules must use approved Umicom Foundation or explicitly approved upstream origins."
+}

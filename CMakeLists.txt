@@ -50,6 +50,8 @@ set(UMICOM_PLATFORM_PUBLIC_HEADERS
     include/umicom/platform/workspace/workspace_status.h
     include/umicom/platform/workspace/graph.h
     include/umicom/platform/workspace/lock_plan.h
+    include/umicom/platform/workspace/lock_edit.h
+    include/umicom/platform/workspace/lock_update.h
     include/umicom/platform/workspace/build_plan.h
     include/umicom/platform/workspace/test_plan.h
     include/umicom/platform/workspace/codeguard_plan.h
@@ -99,6 +101,8 @@ set(UMICOM_PLATFORM_SOURCES
     src/workspace/status.c
     src/workspace/graph.c
     src/workspace/lock_plan.c
+    src/workspace/lock_edit.c
+    src/workspace/lock_update.c
     src/workspace/build_plan.c
     src/workspace/test_plan.c
     src/workspace/codeguard_plan.c

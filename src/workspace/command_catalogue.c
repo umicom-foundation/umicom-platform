@@ -17,6 +17,6 @@
  */
 
 #include <umicom/platform/workspace/command_catalogue.h>
-static const char *COMMANDS[]={"status","graph","sync","framework-audit","lock-plan","build-plan","test-plan","codeguard-plan","os-ui","remote-plan","migration-plan"};
+static const char *COMMANDS[]={"status","graph","sync","framework-audit","lock-plan","lock","build-plan","test-plan","codeguard-plan","os-ui","remote-plan","migration-plan"};
 size_t umi_workspace_command_count(void){return sizeof(COMMANDS)/sizeof(COMMANDS[0]);}
 const char *umi_workspace_command_name(size_t i){return i<umi_workspace_command_count()?COMMANDS[i]:NULL;}

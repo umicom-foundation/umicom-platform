@@ -35,5 +35,8 @@
     "umicom.ui.gtk4/1",
     "umicom.web/1",
     "umicom.ai/1"
-  ]
+  ],
+  "repository_layout": "root-framework-submodule + applications/os",
+  "ui_component_target": "Umicom::ui_components",
+  "desktop_target": "Umicom::ui_gtk4"
 }

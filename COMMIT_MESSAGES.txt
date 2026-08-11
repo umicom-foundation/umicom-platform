@@ -1,1 +1,1 @@
-git commit -m "feat(platform): add native workspace orchestration and OS UI architecture"
+git commit -m "feat(platform): integrate OS Framework migration and reusable UI component architecture"

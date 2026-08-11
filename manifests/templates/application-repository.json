@@ -1,0 +1,13 @@
+{
+  "schema": "umicom.repository-template/1",
+  "root_framework": "framework",
+  "application_root": "applications/<product>",
+  "frontends": [
+    "desktop",
+    "web",
+    "mobile",
+    "headless"
+  ],
+  "build": "CMake+Ninja",
+  "public_boundary": "stable C ABI"
+}

@@ -25,6 +25,7 @@
 #include <umicom/platform/workspace/codeguard_plan.h>
 #include <umicom/platform/workspace/graph.h>
 #include <umicom/platform/workspace/lock_plan.h>
+#include <umicom/platform/workspace/lock_update.h>
 #include <umicom/platform/workspace/migration_plan.h>
 #include <umicom/platform/workspace/os_ui.h>
 #include <umicom/platform/workspace/remote_plan.h>
@@ -45,6 +46,7 @@ int umi_platform_workspace_command(int argc,char **argv){
     if(strcmp(cmd,"graph")==0) return print_result(umi_workspace_print_graph());
     if(strcmp(cmd,"framework-audit")==0) return audit();
     if(strcmp(cmd,"lock-plan")==0) return print_result(umi_workspace_print_lock_plan());
+    if(strcmp(cmd,"lock")==0){if(argc<2){fputs("usage: workspace lock --plan|--apply\n",stderr);return 2;}if(strcmp(argv[1],"--plan")==0)return print_result(umi_workspace_lock_update(false));if(strcmp(argv[1],"--apply")==0)return print_result(umi_workspace_lock_update(true));fputs("usage: workspace lock --plan|--apply\n",stderr);return 2;}
     if(strcmp(cmd,"build-plan")==0) return print_result(umi_workspace_print_build_plan());
     if(strcmp(cmd,"test-plan")==0) return print_result(umi_workspace_print_test_plan());
     if(strcmp(cmd,"codeguard-plan")==0) return print_result(umi_workspace_print_codeguard_plan());

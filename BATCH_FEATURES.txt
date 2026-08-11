@@ -1,15 +1,7 @@
-Umicom Platform Batch 16 — Native Workspace Orchestrator and OS/UI Architecture
-
-- Verified against umicom-platform main commit d473cd3a8d7070fc000a05da4bb4d6e675fcc4f2.
-- Adds nested `workspace` native command family.
-- Adds pinned recursive submodule sync plan/apply.
-- Adds recursive submodule status parsing.
-- Adds read-only lock, build, test, CodeGuard and migration plans.
-- Adds Framework-centred dependency graph.
-- Adds explicit plan-before-mutation and no-auto-push policy.
-- Formalises Umicom OS layering:
-  Linux kernel/base userland do not depend on Framework.
-  Umicom user-space and desktop shell do depend on Framework.
-- Records current Framework `Umicom::ui_gtk4` implementation catalogue.
-- Adopts Framework as canonical home for reusable GTK4 component implementations.
-- Adds architecture decisions and OS/UI profile.
+Umicom Platform Batch 17
+- Canonical application repository migration begins with Umicom OS.
+- Framework adds toolkit-neutral Umicom::ui_components.
+- Framework expands Umicom::ui_gtk4 reusable component implementation.
+- Umicom OS becomes a Framework user-space application with headless and GTK4 shells.
+- Platform adds safe VERSION_LOCK project SHA plan/apply support.
+- No automatic Git commit or push.

@@ -1,0 +1,7 @@
+{
+  "schema": "umicom.workspace-operation/1",
+  "id": "os-ui",
+  "mutates": false,
+  "network": false,
+  "description": "Explain Umicom OS Framework and GTK4 layering."
+}

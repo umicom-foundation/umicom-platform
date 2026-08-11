@@ -25,5 +25,25 @@
       "status": "planned",
       "enabled": false
     }
+  },
+  "orchestrator": {
+    "schema": "umicom.workspace-orchestrator/1",
+    "sync_policy": "pinned-by-default",
+    "remote_updates_require_plan": true,
+    "commit_or_push_automatically": false
+  },
+  "os_policy": {
+    "kernel_depends_on_framework": false,
+    "base_userland_depends_on_framework": false,
+    "umicom_user_space_depends_on_framework": true,
+    "desktop_shell_depends_on_framework": true,
+    "default_desktop_adapter": "gtk4"
+  },
+  "ui_policy": {
+    "toolkit_neutral_public_contracts": "Umicom::ui",
+    "headless_reference_adapter": "Umicom::ui_headless",
+    "gtk4_reference_adapter": "Umicom::ui_gtk4",
+    "framework_owns_reusable_gtk_components": true,
+    "products_may_define_private_product_widgets": true
   }
 }

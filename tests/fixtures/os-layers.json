@@ -1,0 +1,7 @@
+{
+  "kernel": false,
+  "base-userland": false,
+  "framework-runtime": true,
+  "desktop-shell": true,
+  "application": true
+}

@@ -1,0 +1,6 @@
+{
+  "schema": "umicom.policy/1",
+  "rule": "framework-gtk4-library",
+  "severity": "warning",
+  "description": "Reusable GTK4 components shared by multiple Umicom products belong in the Framework GTK4 adapter/component library."
+}

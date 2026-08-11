@@ -1,0 +1,39 @@
+name: Platform Bootstrap
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  bootstrap:
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+
+    steps:
+      - name: Checkout platform metadata
+        uses: actions/checkout@v4
+
+      - name: Configure
+        run: cmake --preset host-debug
+
+      - name: Build
+        run: cmake --build --preset host-debug
+
+      - name: Test
+        run: ctest --preset host-debug
+
+      - name: Validate manifests
+        shell: pwsh
+        run: |
+          if ($IsWindows) {
+            & ".\build\host-debug\bin\umicom-platform.exe" validate
+            & ".\build\host-debug\bin\umicom-platform.exe" workspace os-ui
+            & ".\build\host-debug\bin\umicom-platform.exe" workspace sync --pinned --plan
+          } else {
+            & "./build/host-debug/bin/umicom-platform" validate
+            & "./build/host-debug/bin/umicom-platform" workspace os-ui
+            & "./build/host-debug/bin/umicom-platform" workspace sync --pinned --plan
+          }

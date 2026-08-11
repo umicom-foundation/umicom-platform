@@ -1,0 +1,17 @@
+[
+  "gtk4_adapter",
+  "application_shell",
+  "workbench",
+  "pane",
+  "editor",
+  "menu",
+  "toolbar",
+  "status",
+  "notification",
+  "theme",
+  "accessibility",
+  "selection",
+  "dialog",
+  "clipboard",
+  "declarative_renderer"
+]

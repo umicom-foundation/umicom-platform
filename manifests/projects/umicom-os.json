@@ -8,5 +8,32 @@
   "status": "active",
   "enabled": true,
   "framework_required": true,
-  "frontends": []
+  "frontends": [],
+  "layers": {
+    "linux-kernel": {
+      "framework_dependency": false
+    },
+    "base-userland": {
+      "framework_dependency": false
+    },
+    "umicom-user-space": {
+      "framework_dependency": true
+    },
+    "desktop-shell": {
+      "framework_dependency": true,
+      "ui_adapter": "gtk4"
+    }
+  },
+  "required_framework_capabilities": [
+    "umicom.runtime/1",
+    "umicom.platform/1",
+    "umicom.security/1",
+    "umicom.messaging/1",
+    "umicom.ui/1"
+  ],
+  "optional_framework_capabilities": [
+    "umicom.ui.gtk4/1",
+    "umicom.web/1",
+    "umicom.ai/1"
+  ]
 }

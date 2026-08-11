@@ -31,5 +31,6 @@ int umi_cmd_help(void) {
     puts("  suite              list suites");
     puts("  project <id>       show one project");
     puts("  version            show bootstrap version");
+    puts("  workspace <command> native recursive workspace orchestration");
     return 0;
 }

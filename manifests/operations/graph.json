@@ -1,0 +1,7 @@
+{
+  "schema": "umicom.workspace-operation/1",
+  "id": "graph",
+  "mutates": false,
+  "network": false,
+  "description": "Render the first-stage project dependency graph."
+}

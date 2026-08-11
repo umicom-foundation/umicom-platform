@@ -1,0 +1,7 @@
+{
+  "schema": "umicom.workspace-operation/1",
+  "id": "lock-plan",
+  "mutates": false,
+  "network": false,
+  "description": "Show local HEAD revisions that would enter the next lock file."
+}

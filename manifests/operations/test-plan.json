@@ -1,0 +1,7 @@
+{
+  "schema": "umicom.workspace-operation/1",
+  "id": "test-plan",
+  "mutates": false,
+  "network": false,
+  "description": "Show project test order without starting tests."
+}

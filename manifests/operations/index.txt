@@ -1,0 +1,11 @@
+# Native workspace operation catalogue
+manifests/operations/status.json
+manifests/operations/graph.json
+manifests/operations/sync-pinned-plan.json
+manifests/operations/sync-pinned-apply.json
+manifests/operations/framework-audit.json
+manifests/operations/lock-plan.json
+manifests/operations/build-plan.json
+manifests/operations/test-plan.json
+manifests/operations/codeguard-plan.json
+manifests/operations/os-ui.json

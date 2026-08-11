@@ -1,3 +1,1 @@
-Commit the platform repository:
-
-git commit -m "feat(platform): add workspace manifests native bootstrap tooling and validation"
+git commit -m "feat(platform): add native workspace orchestration and OS UI architecture"

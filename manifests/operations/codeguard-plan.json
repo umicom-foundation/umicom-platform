@@ -1,0 +1,7 @@
+{
+  "schema": "umicom.workspace-operation/1",
+  "id": "codeguard-plan",
+  "mutates": false,
+  "network": false,
+  "description": "Show platform-wide CodeGuard scan roots."
+}

@@ -1,0 +1,7 @@
+{
+  "schema": "umicom.workspace-operation/1",
+  "id": "framework-audit",
+  "mutates": false,
+  "network": false,
+  "description": "Compare nested Framework revisions."
+}

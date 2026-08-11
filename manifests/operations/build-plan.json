@@ -1,0 +1,7 @@
+{
+  "schema": "umicom.workspace-operation/1",
+  "id": "build-plan",
+  "mutates": false,
+  "network": false,
+  "description": "Show project build order without starting builds."
+}

@@ -1,0 +1,7 @@
+{
+  "schema": "umicom.workspace-operation/1",
+  "id": "status",
+  "mutates": false,
+  "network": false,
+  "description": "Inspect configured projects and local submodule state."
+}

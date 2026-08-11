@@ -1,0 +1,6 @@
+{
+  "schema": "umicom.policy/1",
+  "rule": "workspace-plan-before-mutation",
+  "severity": "error",
+  "description": "Remote submodule advancement, lock changes and migrations require an explicit plan before mutation."
+}

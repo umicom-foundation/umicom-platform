@@ -30,6 +30,7 @@ int umi_cmd_tree(void);
 int umi_cmd_validate(void);
 int umi_cmd_version(void);
 int umi_cmd_websites(void);
+int umi_platform_workspace_command(int argc, char **argv);
 
 int main(int argc, char **argv) {
     if (argc < 2) return umi_cmd_help();
@@ -46,6 +47,7 @@ int main(int argc, char **argv) {
     if (strcmp(cmd, "validate") == 0) return umi_cmd_validate();
     if (strcmp(cmd, "version") == 0 || strcmp(cmd, "--version") == 0) return umi_cmd_version();
     if (strcmp(cmd, "websites") == 0) return umi_cmd_websites();
+    if (strcmp(cmd, "workspace") == 0) return umi_platform_workspace_command(argc - 2, argv + 2);
     fprintf(stderr, "unknown command: %s\n", cmd);
     return 2;
 }

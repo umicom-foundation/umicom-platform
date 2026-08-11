@@ -1,0 +1,6 @@
+{
+  "schema": "umicom.policy/1",
+  "rule": "os-framework-layering",
+  "severity": "error",
+  "description": "Linux kernel and base recovery userland must not depend on Umicom Framework; Umicom OS user-space may and normally should."
+}

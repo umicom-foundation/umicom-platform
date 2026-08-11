@@ -1,0 +1,7 @@
+{
+  "schema": "umicom.workspace-operation/1",
+  "id": "sync-pinned-apply",
+  "mutates": true,
+  "network": true,
+  "description": "Run sync and recursive init/update to recorded Gitlinks only."
+}

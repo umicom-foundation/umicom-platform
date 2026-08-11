@@ -1,13 +1,15 @@
-Umicom Platform Batch 15 — Stage 1
+Umicom Platform Batch 16 — Native Workspace Orchestrator and OS/UI Architecture
 
-- Verified against umicom-platform main commit 733bf1d1b3f9cd4e7ee9bb00f704813f855ee1d9.
-- Adds machine-readable workspace and version-lock metadata.
-- Adds active and planned project manifests.
-- Keeps both websites manifest-only until canonical repositories are approved.
-- Records Trader as a planned migration from Studio's current applications/trader source.
-- Adds suite manifests for Studio, Financial, Creator, Education and Complete.
-- Adds platform policies and schema contracts.
-- Adds a dependency-light native C23 bootstrap tool: umicom-platform.
-- Adds doctor, status, validate, list, tree, lock, websites, suite, project and framework-audit commands.
-- Adds recursive Framework-SHA audit support after nested submodules are initialised.
-- Adds strict CMake/Ninja build and 25 focused tests.
+- Verified against umicom-platform main commit d473cd3a8d7070fc000a05da4bb4d6e675fcc4f2.
+- Adds nested `workspace` native command family.
+- Adds pinned recursive submodule sync plan/apply.
+- Adds recursive submodule status parsing.
+- Adds read-only lock, build, test, CodeGuard and migration plans.
+- Adds Framework-centred dependency graph.
+- Adds explicit plan-before-mutation and no-auto-push policy.
+- Formalises Umicom OS layering:
+  Linux kernel/base userland do not depend on Framework.
+  Umicom user-space and desktop shell do depend on Framework.
+- Records current Framework `Umicom::ui_gtk4` implementation catalogue.
+- Adopts Framework as canonical home for reusable GTK4 component implementations.
+- Adds architecture decisions and OS/UI profile.

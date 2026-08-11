@@ -42,6 +42,28 @@ set(UMICOM_PLATFORM_PUBLIC_HEADERS
     include/umicom/platform/version.h
     include/umicom/platform/websites.h
     include/umicom/platform/workspace.h
+    include/umicom/platform/workspace/workspace_command.h
+    include/umicom/platform/workspace/operation.h
+    include/umicom/platform/workspace/plan.h
+    include/umicom/platform/workspace/sync.h
+    include/umicom/platform/workspace/submodule_status.h
+    include/umicom/platform/workspace/workspace_status.h
+    include/umicom/platform/workspace/graph.h
+    include/umicom/platform/workspace/lock_plan.h
+    include/umicom/platform/workspace/build_plan.h
+    include/umicom/platform/workspace/test_plan.h
+    include/umicom/platform/workspace/codeguard_plan.h
+    include/umicom/platform/workspace/os_ui.h
+    include/umicom/platform/workspace/git_command.h
+    include/umicom/platform/workspace/project_state.h
+    include/umicom/platform/workspace/workspace_policy.h
+    include/umicom/platform/workspace/ui_catalogue.h
+    include/umicom/platform/workspace/os_layer.h
+    include/umicom/platform/workspace/workspace_health.h
+    include/umicom/platform/workspace/formatter.h
+    include/umicom/platform/workspace/remote_plan.h
+    include/umicom/platform/workspace/migration_plan.h
+    include/umicom/platform/workspace/command_catalogue.h
 )
 
 set(UMICOM_PLATFORM_SOURCES
@@ -69,6 +91,27 @@ set(UMICOM_PLATFORM_SOURCES
     src/validation/workspace_validator.c
     src/platform/toolchain.c
     src/platform/websites.c
+    src/workspace/plan.c
+    src/workspace/git_command.c
+    src/workspace/sync.c
+    src/workspace/submodule_status.c
+    src/workspace/project_state.c
+    src/workspace/status.c
+    src/workspace/graph.c
+    src/workspace/lock_plan.c
+    src/workspace/build_plan.c
+    src/workspace/test_plan.c
+    src/workspace/codeguard_plan.c
+    src/workspace/os_layer.c
+    src/workspace/ui_catalogue.c
+    src/workspace/os_ui.c
+    src/workspace/workspace_policy.c
+    src/workspace/formatter.c
+    src/workspace/remote_plan.c
+    src/workspace/migration_plan.c
+    src/workspace/command_catalogue.c
+    src/workspace/workspace_health.c
+    src/workspace/workspace_command.c
     src/commands/cmd_doctor.c
     src/commands/cmd_framework_audit.c
     src/commands/cmd_help.c

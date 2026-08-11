@@ -2,30 +2,51 @@
 
 `umicom-platform` is the master integration workspace for the Umicom ecosystem.
 
-It does not replace the Git history of Umicom Framework, Studio IDE, TMS, Bank,
-UmiCoin, Umicom OS, AuthorEngine or other products. Those repositories remain
-independent Git submodules. This repository records a tested combination of
-their exact Git revisions and supplies platform-wide validation, build
-orchestration, suite manifests and integration tests.
+Each major product remains an independent Git repository. The platform pins exact
+submodule revisions, validates compatibility, plans workspace operations and
+coordinates cross-project build, test and release work.
 
-## First-stage commands
+## Stage 2 native workspace commands
 
 ```powershell
-git submodule sync --recursive
-git submodule update --init --recursive
+$platform = ".\build\host-debug\bin\umicom-platform.exe"
 
-cmake --preset host-debug
-cmake --build --preset host-debug
-ctest --preset host-debug
-
-.\build\host-debug\bin\umicom-platform.exe doctor
-.\build\host-debug\bin\umicom-platform.exe status
-.\build\host-debug\bin\umicom-platform.exe validate
-.\build\host-debug\bin\umicom-platform.exe framework-audit
+& $platform workspace status
+& $platform workspace graph
+& $platform workspace sync --pinned --plan
+& $platform workspace framework-audit
+& $platform workspace lock-plan
+& $platform workspace build-plan
+& $platform workspace test-plan
+& $platform workspace codeguard-plan
+& $platform workspace os-ui
 ```
 
-On Linux omit `.exe`.
+The first mutating workspace operation is deliberately narrow:
 
-The two website projects remain **planned** in Batch 15 and are not Git
-submodules yet. A literal placeholder such as `<FOUNDATION-WEBSITE-URL>` must
-not be typed into PowerShell because `<` is parsed as shell syntax.
+```powershell
+& $platform workspace sync --pinned --apply
+```
+
+It performs only:
+
+```text
+git submodule sync --recursive
+git submodule update --init --recursive
+```
+
+It does not switch branches, commit, push or move submodules to newer remote
+branches.
+
+## Umicom OS and Framework
+
+The Linux kernel and base Linux userland do not depend on Umicom Framework.
+
+The **Umicom OS user-space platform does depend on Umicom Framework**. This
+includes the Umicom desktop shell, settings applications, launcher, system
+management UI, developer environment and bundled Umicom applications.
+
+The Framework is also the canonical home for reusable toolkit-neutral UI
+contracts and the reusable GTK4 adapter/component implementation. Product-only
+widgets remain in the product until a second real consumer proves they are
+reusable.

@@ -3,17 +3,17 @@
   "platform_commit": "944fee44e16102c265cc8c16ffc447d1eb856fd9",
   "generated_from": "verified GitHub main after Batch 16",
   "projects": {
-    "framework": "26eef4fa8a8da05f8d4e653e04e87a61ca6effec",
-    "studio-ide": "133c39ebe6d03af9c836f6ffad693c379a449359",
+    "framework": "55887491eebd56bf0d0964f4475cea2403d2cc5b",
+    "studio-ide": "d484ee5fee2e851157545a310c95e61ff056ec1e",
     "tms": "ad09fbd71d1a2b3a933ce507886ee1ee9f0d8fc8",
     "bank": "5723bac66b9cffef02292a0139d260f57e64110d",
     "llm": "ad441580e5addfdbb1698a5b36f969f020f3ca20",
     "umicoin": "9538fa4f016bb5f36cc22201ad01b6726de52ee7",
-    "umicom-os": "dc628bafd705db596aa34f8d9800536d840ac6fe",
+    "umicom-os": "98965f76bcb3afeff4f267fecc7c096fd7bf2b86",
     "authorengine": "fc1ca481022b60eb6f6b52d7e95256e85192e09e"
   },
   "nested_expected": {
-    "studio-framework": "26eef4fa8a8da05f8d4e653e04e87a61ca6effec",
+    "studio-framework": "55887491eebd56bf0d0964f4475cea2403d2cc5b",
     "studio-authorengine": "fc1ca481022b60eb6f6b52d7e95256e85192e09e",
     "authorengine-llama.cpp": "a4a0aa5ea2a88e4858996199fefd5439f17b481c"
   },

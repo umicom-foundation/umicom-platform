@@ -74,3 +74,9 @@ umi_platform_add_test(test_suite_v2_schema "test_suite_v2_schema.c")
 umi_platform_add_test(test_suite_policy_files "test_suite_policy_files.c")
 umi_platform_add_test(test_integration_adr "test_integration_adr.c")
 umi_platform_add_test(test_integration_graph "test_integration_graph.c")
+
+# The additional C23 contract test creates synthetic executable-image fixtures;
+# its working directory is the build tree, never the source repository.
+umi_platform_add_test(test_suite_artifacts "test_suite_artifacts.c")
+set_tests_properties(test_suite_artifacts PROPERTIES
+    WORKING_DIRECTORY "${CMAKE_CURRENT_BINARY_DIR}")

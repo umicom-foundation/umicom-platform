@@ -69,6 +69,8 @@ set(UMICOM_PLATFORM_PUBLIC_HEADERS
     include/umicom/platform/workspace/command_catalogue.h
     include/umicom/platform/workspace/suite_command.h
     include/umicom/platform/workspace/integration_graph.h
+    # Check target executable readiness separately from suite launch readiness.
+    include/umicom/platform/workspace/suite_artifacts.h
 )
 
 set(UMICOM_PLATFORM_SOURCES
@@ -121,6 +123,8 @@ set(UMICOM_PLATFORM_SOURCES
     src/workspace/workspace_health.c
     src/workspace/suite_command.c
     src/workspace/integration_graph.c
+    # Read-only suite image evidence; previous source-directory plan is retained.
+    src/workspace/suite_artifacts.c
     src/workspace/workspace_command.c
     src/commands/cmd_doctor.c
     src/commands/cmd_framework_audit.c

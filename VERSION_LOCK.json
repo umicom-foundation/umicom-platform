@@ -1,19 +1,19 @@
 {
   "schema": "umicom.version-lock/1",
-  "platform_commit": "944fee44e16102c265cc8c16ffc447d1eb856fd9",
-  "generated_from": "verified GitHub main after Batch 16",
+  "platform_commit": "1464b6e1b381179678470c3826c147857952e2aa",
+  "generated_from": "Published child revisions; platform_commit records the parent base",
   "projects": {
-    "framework": "f50c999aca578ebe7b9454473be3b4e046d84726",
-    "studio-ide": "b246caf503efb318280d95f200ec54a673e11325",
-    "tms": "ad09fbd71d1a2b3a933ce507886ee1ee9f0d8fc8",
-    "bank": "5723bac66b9cffef02292a0139d260f57e64110d",
-    "llm": "ad441580e5addfdbb1698a5b36f969f020f3ca20",
+    "framework": "06c10ce3348e80e1a5ded2e148186d1c32d51a23",
+    "studio-ide": "4f85d6f31881b14015f51eec2fa4d9f1182959c7",
+    "tms": "99f52f6f9296d5de449a2d1a1b70b4edde185768",
+    "bank": "266ae26ff2b62b37a0714c581bd8159c8d058ac4",
+    "llm": "e44e9176c177df955a868a7cdd6fd1e4716e1b14",
     "umicoin": "9538fa4f016bb5f36cc22201ad01b6726de52ee7",
-    "umicom-os": "b409d94a48f26614a2d3af5fdda201a97a42094b",
+    "umicom-os": "b096c1a6b638f7d9f8a47f2b879645af7c8ca9ea",
     "authorengine": "fc1ca481022b60eb6f6b52d7e95256e85192e09e"
   },
   "nested_expected": {
-    "studio-framework": "f50c999aca578ebe7b9454473be3b4e046d84726",
+    "studio-framework": "06c10ce3348e80e1a5ded2e148186d1c32d51a23",
     "studio-authorengine": "fc1ca481022b60eb6f6b52d7e95256e85192e09e",
     "authorengine-llama.cpp": "a4a0aa5ea2a88e4858996199fefd5439f17b481c"
   },
@@ -27,5 +27,5 @@
     "foundation-website",
     "framework-website"
   ],
-  "workspace_orchestrator": "batch16-native-plan-and-pinned-sync"
+  "workspace_orchestrator": "native-plan-and-pinned-sync"
 }

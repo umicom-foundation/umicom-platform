@@ -1,0 +1,14 @@
+# Umicom Platform: reviewed executable filename catalogue.
+# Each record is: <project-id> <windows-executable-basename> <linux-executable-basename>
+# No path components: paths come only from --bin-dir.
+# '-': the executable name has NOT been verified and must fail closed.
+# Do NOT add guessed executable names merely to make a suite report READY.
+#
+# Evidence: Umicom Applications integrated native Windows build naming and
+# Studio, Trader, Bank and TMS workstation executable documentation.
+umicom.studio-ide umicom-studio-ide.exe umicom-studio-ide
+umicom.trader umicom-trader.exe umicom-trader
+umicom.bank umicom-bank.exe umicom-bank
+umicom.tms umicom-tms.exe umicom-tms
+# LLM, Umicoin, AuthorEngine, Media, Music etc. remain deliberately UNMAPPED.
+# Inspect their actual installed executable and packaging manifest first.
